@@ -1,0 +1,131 @@
+#root {
+  display: grid;
+  grid-template-columns: repeat( 3, 1fr);
+  grid-template-rows: 50vh 50vh;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.tasks {
+  border-radius: 10px;
+  background-color: rgb(46, 202, 88);
+  /* display: flex;
+  flex-direction: column; */
+  text-align: left;
+  padding-left: 1vw;
+  padding-bottom: 1vh;
+}
+
+.todolist {
+  overflow: auto;
+  height: 80vh;
+  grid-row: 1 / span 2;
+  grid-column: 3 / span 1;
+  background-color: rgb(165, 243, 110);
+  border-radius: 10px;
+  scrollbar-width: none;
+  padding-right: 2.5vw;
+}
+
+ul {
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+.nodata {
+  padding-right: 3vw;
+}
+
+.addtodo {
+  grid-row: 1/ span 2;
+  grid-column: 2 / span 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  padding-right: 10vw;
+  /* padding-left: 10vw; */
+
+}
+
+.addtodobutton {
+  align-self: center;
+  width: 15vw;
+}
+
+.addtask {
+  max-height: 10vh;
+  min-height: 10vh;
+  min-width: 10vw;
+  max-width: 22vw;              /* Set the height of the input box */       /* Vertically align text to the top */
+  font-size: 14px;           /* Adjust the font size */
+  padding: 0;                /* Remove padding */
+  text-align: left;          /* Optional: Align text to the left */
+}
+
+.reglogin{
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  gap: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+
+.signout {
+  display: flex;
+}
+
+.duedate {
+  font-size: small;
+}
+
+.deletebutton {
+  width: 10vw;
+  /* transition: padding-left 0.3s ease; */
+}
+
+.deletebutton:active {
+  background-color:rgb(197, 255, 156);
+}
+
+/* .logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
